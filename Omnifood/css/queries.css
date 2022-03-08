@@ -1,0 +1,291 @@
+
+/* use len not px and rem in meida use em so 1en = 16px 
+so get the wdith like 1355 / 16 this is the max width 
+but i am still learning so us px  */
+
+/*this is for small laptops */
+@media(max-width : 1355px) {
+  .hero  {
+    max-width: 120rem;
+  }
+  .heading-primary{
+    font-size: 4.4rem;
+  }
+  .gallery{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+/*---------------------------*/
+/*----- tablets ----------*/
+/*---------------------------*/
+/*alywas on 1200 decrease the font */
+@media(max-width :1200px) {
+  html{
+    font-size: 56.25%; /*make it 9 px not 10px
+    9px / 16 * 100 = 56.25 */ 
+  }
+  
+  .header-sec{
+    font-size: 3.3rem;
+  }
+  .nav-ul{
+    gap: 3.3rem;
+  }
+  .header-third{
+    font-size: 2.4rem;
+  }
+  .header{
+    padding:  0 3.2rem;
+   }
+   .hero{
+     /*this for the section hero decrease space between img and text*/
+      gap: 4.6rem;
+   }
+  /* .section-testimonials {
+    grid-template-columns: 1fr;
+   }
+   .gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   }*/
+   .testimonials-container{
+     padding: 9.6rem 3.6rem;
+   }
+}
+
+
+/*---------------------------*/
+/*-----small tablets ----------*/
+/*---------------------------*/
+
+
+@media(max-width : 944px){
+  html{
+    font-size: 50%;/* make it 8px cox 8 /16 * 100 = 50% */
+  }
+
+  .hero{
+    grid-template-columns: 1fr;
+    padding: 0 8rem;/* علشان احجم شكل الكونتينر يكون شكلة افضل */
+  }
+  .hero-text-box{
+    text-align: center;
+  }
+  .hero-img-box{
+    text-align: center;
+  }
+
+  .deleivered-meals {
+    justify-content: center;/*coz it flex box */
+    margin-top: 3.2rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .number {
+    font-size: 7.4rem; 
+  }
+  .meals-paading {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6,1fr);
+  }
+
+  .data{
+    grid-template-columns: 60% 40%;
+  }
+
+  .form{
+    grid-template-columns:  1fr ;
+  }
+
+  .btn-form{
+   margin-top: 1.4rem;
+  }
+/* كل الكود اللى تحت انى اعمل زرار لى الموبايل بحيث اضغط علية يظهر ليا
+اللينكات */
+  .btn-mobile{
+    display: block;
+  }
+  .main-nav{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* how to hide it with out diaply none to get animation */
+    opacity: 0;
+    pointer-events: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);/*هنا هخليها تروح لى اقصى اليمين 
+    عشان تبقى تيجى من الشمال لى اليمين بشكل حلو بس لازم 
+    اروح لى 
+    html and body and make overlfow-x hidden  and in header
+    postion relative */
+  }
+  .nav-ul{
+   flex-direction: column;
+    gap: 4.8rem;
+  }
+/*nav-open is parent of main-nav so when i remove it using js
+this will gone and wille not be showen */
+.nav-open .main-nav{
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+/* here nav open is there so i want to show the close btn and
+hide the open button which is menu */
+.nav-open .icon-mobile[name="close-outline"]{
+  display: block;
+}
+
+.nav-open .icon-mobile[name="menu-outline"]{
+  display: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+ font-size: 3rem;
+}
+
+/*--- smallet tablets */
+}
+
+
+@media(max-width : 700px){
+  .grid--3--cols , .grid--4--cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets{
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .pricing-plan{
+    width: 100%;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6,1fr);
+  }
+  .nav-col{
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col , .address-col {
+   grid-column:  span 3;
+  }
+  .image-work {
+    width: 45%;
+  }
+  .image-section-work::before {
+    padding-bottom: 65%;
+    width: 65%;
+  }
+  .section-how {
+    padding: 9.6rem 4.8rem;
+  }
+}
+
+/*--------mobile */
+
+@media(max-width : 550px){
+  .grid--2--cols,.grid--3--cols ,.grid--4--cols {
+    grid-template-columns: 1fr;
+  }
+  .grid {/*بقلل الرو عشان يكونوا قريبين من بعض مش بعاد */
+    row-gap: 4.8rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+   padding: 2.4rem 1.1rem;
+  }
+  .hero{
+    padding: 0 3.2rem;/* علشان احجم شكل الكونتينر يكون شكلة افضل */
+  }
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+   height: 1.2rem;
+  }
+
+  /*here i can move the row coz i have 6 rows so i can chenge them */
+  .image-section-work:nth-child(2){
+    grid-row: 1;
+  }
+  .image-section-work:nth-child(6){
+    grid-row: 5;
+  }
+  .image-section-work {
+    transform: translateY(2.4rem);/* move it down*/
+  }
+  .header-third{
+    font-size: 1.9rem;
+    line-height: 0.8;
+  
+  }
+  .section-how {
+    padding: 6.3rem 3.3rem;
+     
+  }
+  .number {
+font-size: 4.8rem;
+ 
+  }
+  .testimonials{
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+  .data{
+ 
+    grid-template-columns:  1fr ;
+  }
+  .img-box{
+   height: 30rem;
+    grid-row: 1;
+  }
+
+  .from-box{
+    padding: 3.2rem
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

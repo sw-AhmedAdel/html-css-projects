@@ -1,0 +1,105 @@
+/*--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+meduam 400
+semi bold 500
+bold 700
+
+- Line heights
+Default: 1
+paragrah 1.6
+small 1.05
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+- Primary:  #e67e22
+- Tints: #fae5d3
+- Shades: #cf711f;
+
+- Accents:
+- Greys
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+
+
+--- 07 WHITESPACE
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* what is rem rem is 16px so each rem is 16px   for font size = so 1rem = fontsize = 16 px;
+so to use rem i need to set the fontsize at 10 to be able to use rem coz if i made padding 1rem == 10px;
+why i use this ?? coz in resposive website to shrink the websit to make i smaller this will make the fontsize smaller 
+so i can not go to change the all px i made so rem can do it by declaring the fontsize=10 and use rem 
+so if i increase the fontsize this will increase in all rem */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*
+   precentage of users borwser font size setting so if
+    user change the font size this will change the
+  /*all style */
+  /* means font in browser is % so
+   as defualt make it 10 / 16 =0.625 * 100 = 62.5%*/
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+/* reusalbe colde */
+.container {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols  {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--center {
+  align-items: center;
+}
+/******  header   */
+

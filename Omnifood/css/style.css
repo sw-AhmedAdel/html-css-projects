@@ -1,0 +1,768 @@
+
+/*mobile icons */
+.btn-mobile{
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile{
+height: 4.8rem;
+width: 4.8rem;
+color: #333;
+}
+/*  <ion-icon class="icon-mobile" name="menu-outline"></ion-icon>
+     <ion-icon  class="icon-mobile" name="close-outline"></ion-icon>
+     by choose the icon to make it display i can use its arrtibute
+     */
+     .icon-mobile[name="close-outline"]{
+       display: none;
+     }
+
+/*----------------*/
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fae5d3;
+  /* use hight coz it is easy to make header sticky */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.logo {
+  height: 2.2rem;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #cf711f;
+  letter-spacing: 0.5px;
+}
+
+.nav-link.last-link:link,
+.nav-link.last-link:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #e67e22;
+  color: white;
+}
+
+.nav-link.last-link:hover,
+.nav-link.last-link:active {
+  background-color: #cf711f;
+}
+/* end of header */
+
+
+
+  /*stikcy navigation */
+  
+  .stikcy .header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 999;
+    background-color: white;
+  }
+/* why i am doing that coz the header height is 9.6rem
+so it is postion fixed means it will not be on the header 
+means the header will be lost so the hero section will go up
+so moves up so i will take the hight of header and add it 
+to the hero section as margin top to compensate the lost of header
+*/
+ .stikcy .section-hero {
+    padding-top: 9.6rem;
+  }
+  
+/*------------------*/
+/*  start section hearo  number 1 */
+.hero-img {
+  width: 100%;
+}
+.section-hero {
+  background-color: #fae5d3;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  line-height: 1.05;
+  columns: rgb(44, 44, 44);
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+.hero-des {
+  line-height: 1.6;
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.3s;
+  padding: 1.6rem 3.2rem;
+}
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: white;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outlit:link,
+.btn-outlit:visited {
+  background-color: white;
+  color: #e67e22;
+}
+.btn-outlit:hover,
+.btn-outlit:active {
+  background-color: #fae5d3;
+  box-shadow: inset 0 0 0 3px white;
+}
+.margin-right {
+  margin-right: 1.6rem !important;
+}
+
+.deleivered-meals {
+  margin-top: 6.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.deleivered-images {
+  display: flex;
+}
+.deleivered-images img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fae5d3;
+}
+.deleivered-images img:last-child {
+  margin-right: 0;
+}
+.deleivered-text {
+  font-size: 1.6rem;
+}
+.deleivered-text span {
+  color: #cf711f;
+}
+
+/*  end section hearo  number 1 */
+
+/*  start section how  number  */
+
+/*************************************** */
+/********* section featured */
+
+.section-featured {
+  padding: 3.2rem 0 3.2rem 0;
+}
+
+.featured {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.75px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.3rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/*****************************************/
+/************ section how **************/
+
+ 
+.section-how {
+  padding: 9.6rem;
+}
+
+.span-1 {
+  display: block;
+  font-size: 1.8rem;
+  color: #cf711f;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+.header-sec {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 9.6rem;
+}
+.image-work {
+  width: 30%;
+}
+.number {
+  font-size: 8.5rem;
+  color: #ddd;
+  margin-bottom: 1.6rem;
+}
+.header-third {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 3.3rem;
+}
+
+.details-section-wrok {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.image-section-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-section-work::before {
+  content: "";
+  display: block;
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -2;
+}
+.image-section-work::after {
+  content: "";
+  display: block;
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: rgb(255, 239, 239);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* end of section how */
+/***************************************/
+
+/* end of section  how it works */
+/******************************************/
+
+/* start of section  meals */
+/******************************************/
+.section--meals {
+  padding: 9.6rem 0;
+}
+.meal-img {
+  width: 100%;
+}
+
+.tags {
+  margin-bottom: 1.6rem;
+}
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  padding: 0.4rem 0.8rem;
+}
+.tag-vegian {
+  background-color: #40c057;
+}
+
+.meal-details {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.meal-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #cf711f;
+}
+
+.meal-list {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.meals-paading {
+  padding: 3.2rem 4.4rem 4.4rem 4.4rem;
+}
+
+.meals {
+  box-shadow: -2px 0 5px rgb(145 139 139);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.change-green {
+  background-color: #40c057 !important;
+}
+
+.change-yello {
+  background-color: #fab005 !important;
+}
+.diets ul {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+ 
+
+.icon-item {
+  color: #e67e22;
+  width: 3rem;
+  height: 3rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.margin-bottom {
+  margin-bottom: 4.8rem !important;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-weight: 500;
+  color: #e67e22;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 2px solid transparent;
+  color: #cf711f;
+}
+.center-text {
+  text-align: center;
+}
+
+.meals:hover {
+  transform: translateY(-1.2rem); /* move it up */
+}
+.meals {
+  transition: all 0.4s; /*to make it animation */
+}
+
+/***********end ****************************/
+
+/* ********* start section-testimonials**********************/
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  background-color: #fae5d3;
+  align-items: center;
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-name {
+  font-size: 1.8rem;
+  color: #cf711f;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonials-container {
+  padding: 9.6rem;
+}
+/*gallery */
+.gallery-item img {
+  width: 100%;
+  display: block; /*coz there is space between images */
+  transition: all 0.4s;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+.gallery-item {
+  /*coz image gets out of container */
+  overflow: hidden;
+}
+
+
+
+/***********end ****************************/
+
+/* ********* start section-testimonials**********************/
+
+.section-price{
+  padding: 9.6rem 0;
+}
+.header-plan{
+  text-align: center;
+  line-height: 1.2;
+}
+
+.plan-name {
+color: #cf711f;
+font-size: 2.4rem;
+font-weight: 500;
+line-height: 1.6;
+margin-bottom: 1.5rem;
+}
+.plan-price {
+  font-size: 5.5rem;
+ font-weight: 500;
+ line-height: 1.2;
+ color: #333;
+ margin-bottom: 1.5rem;
+}
+.plan-price span{
+  font-size: 3.2rem;
+}
+.plan-test {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 4.4rem;
+}
+.margin-bottom-link {
+  margin-bottom: 6.7rem;
+}
+
+.link-center {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricing-plan{
+  width: 75%;
+  border-radius: 11px;
+  box-shadow: -4px -2px 6px rgb(233 191 191);}
+
+  /* make each one have diff padding coz starter has border
+  this will make the link in it less than the link in the other card
+  */
+.starter{
+  justify-self: end;
+  border: 2px solid #fff9f5;;
+  padding: 4.2rem;
+}
+ 
+.pricing-plan-completer{
+  background-color: #fae5d3;
+  padding: 4.4rem;
+  position: relative;
+  overflow: hidden;
+  
+ }
+ .pricing-plan-completer::before {
+  content: "best value";
+  text-transform: uppercase;
+  top: 7%;
+  right: -21%;
+  font-size: 1.8rem;
+  color: #333;
+  background-color :#e67e22;
+  color: white;
+  letter-spacing: 1px;
+  padding: 0.8rem 8rem;
+  position: absolute;
+  transform: rotate(45deg);
+ }
+
+ /*if i used grid and use it and this gird is last child there
+ is no space so i need to make it manualy */
+
+ 
+ /* مهناة ان لما يكون فى كلاس فية جريد واحد فقط مش تضيف مارجن 
+ بس لو فى اتنين جريد او تلاتة كدا هيلزقوا فى بعض فا بقول
+ لو الجريد دا مش الاخير زود مارجن بوتن فا فا فى السكشن دا عندى
+ 3 جريد 
+ اول واحد بتاع الاسعار فا خد مارجن عشان اللى تحتية يزنل لان اللى تحتية جريد
+ فا اللى تحتية خد مارجن عشان اللى تحتية جريد
+ اخر واحد مخدش حاجة عشان هو الاخير */
+ .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+ }
+ 
+ .texts {
+   font-size: 1.8rem;
+   line-height: 1.8;
+   text-align: center;
+   
+ } 
+ /* i must add grid to the container  that has text why ?? 
+ coz the last container is grid and will not have margin 
+ so add grid to contianer */
+
+ .margin--bottom{
+   margin-bottom: 4.4rem !important;
+ }
+ 
+ .feature-icon{
+   width: 2.4rem;
+   height:2.4rem;
+   color:#e67e22;
+   background-color: #fae5d3;
+   padding: 1.6rem;
+   border-radius: 50%;
+   margin-bottom: 3.6rem;
+ }
+
+ .features-text{
+   font-size: 2.4rem;
+   margin-bottom: 1.2rem;
+   font-weight: 700;
+   line-height: 1.6;
+   color: #333; 
+ }
+
+ .features-info{
+   font-size: 1.8rem;
+   line-height: 1.6;
+ }
+
+/***********end ****************************/
+/***********end ****************************/
+
+/***********start of  section form ********************/
+
+.section-form{
+  /* top right button left */
+  padding: 9.6rem 0 12.4rem  0;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom , 
+  #e67d22c7 ,  #cf711f );
+ /* height: 50rem;*/
+  border-radius: 12px;
+  overflow: hidden;
+  color: #45260a;
+}
+
+.img-box{
+  background-image: linear-gradient(to right bottom , 
+  #9b6d466c ,  #915e334b ), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.from-box{
+  padding: 4.8rem  6.4rem 6.4rem 6.4rem;
+}
+
+.data .header-sec{
+  margin-bottom: 3.2rem;
+  color: #45260a;
+}
+
+.data-text{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.form{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  
+}
+
+.form label{
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  display: block;
+}
+.form input , .form select{
+  border:none;
+  width: 100%;
+  border-radius: 9px;
+  padding: 1.2rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.8rem;
+ }
+
+.form input::placeholder{
+  color: #aaa;
+}
+
+
+.btn-form{
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color:  #45260a;
+  border-radius: 9px;
+  padding: 1.2rem;
+  align-self: end;
+  font-size: 2rem;
+  transition:  all 0.3s;
+}
+.btn-form:hover{
+  background-color: white;
+  color: #45260a;
+} 
+
+/*end of this section */
+/*--------------------*/
+
+/*----------------footer--------------- */
+ .footer{
+   padding: 12.4rem 0;
+   border-top: 1px solid #eee;
+ }
+ .footer-logo{
+   display: block;
+   margin-bottom: 3.2rem;
+ }
+
+ .social-media{
+   list-style: none;
+   display: flex;
+   gap: 2.2rem;
+ }
+ .social-logo{
+   width: 2.4rem;
+   height: 2.4rem;
+   color: #777;
+ }
+
+ 
+
+ .logo-col{
+display: flex;
+flex-direction: column;
+ }
+ .copy{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: auto;
+  color: #777;
+}
+
+
+.footer-heading{
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.contacts{
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.add{
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link ,.footer-link:visited{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
